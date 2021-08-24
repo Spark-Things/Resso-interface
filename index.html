@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+      <style>
+        body{
+          box-sizing: border-box;
+          margin: 0;
+        }
+           #navbar{
+             width: 100%;
+             height: 100px;
+             position: fixed;
+             top: 0;
+             overflow: hidden;
+             background-image: linear-gradient(to bottom,rgb(62, 117, 153),rgb(34, 34, 34),rgb(34, 34, 34));    
+           }
+           #set{
+    
+             width:100%;
+           }
+           #sidebar{
+             float: left;
+             width: 250px;
+             text-align: center;
+             margin-top: 100px;
+             height: 900px;
+             background-color:transparent;
+             position: fixed;
+           }
+          #mainContainer{
+            float: left;
+            width: 75%;
+            height:max-content;
+            background-color:transparent;
+            padding: 20px;
+            margin-top: 100px;
+            margin-left: 250px;
+          }
+          #searchbar{
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 50px;
+            border: black 1px;
+            background-color: rgba(167, 167, 167, 0.24);
+            margin-top: 50px;
+            margin-left: 600px;
+          }
+          .container{
+            float: left;
+            height: 200px;
+            width: 250px;
+            background-color: rgba(167, 167, 167, 0.24);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+          }
+          .containera{
+            float: left;
+            height: 180px;
+            width: 350px;
+            background-color: rgba(167, 167, 167, 0.24);
+            border-radius: 10px;
+            margin: 5px;
+            margin-left: 50px;
+            padding: 10px;
+          }
+          .containertwo{
+            float: left;
+            width: 600px;
+            height: 200px;
+            background-color: rgba(167, 167, 167, 0.24);
+            border-radius: 10px;
+            margin: 5px;
+          }
+           
+          .container3{
+            float: left;
+            width: 100%;
+            height: 200px;
+            background-color:rgba(167, 167, 167, 0.24);
+            margin: 5px;
+
+            border-radius: 10px;
+            padding: 10px;
+          } 
+          .slides1,.slides2{display: none;}
+          .subcontainer{
+            float: left;
+            height: 150px;
+            width: 160px;
+            background-color: rgb(62, 117, 153);
+            border-radius: 10px;
+            margin: 7px;
+          }
+          .subcontainer2{
+            float: left;
+            height: 150px;
+            width: 160px;
+            background-color: rgb(31, 155, 114);
+            border-radius: 10px;
+            margin: 7px;
+          }
+          .navigetor{
+            color: transparent;
+            float: left; 
+            background-color: transparent;
+            padding: 10px;
+            margin: 5px;
+            margin-right: 0px;
+            font: 1em sans-serif;
+            height: 40%;
+            padding-top: 70px; 
+          }
+          .navigetor:hover{
+            color: white;
+          }
+          .sp{
+            text-align: left;
+            width: 90%;
+            float: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            background-color: transparent;
+            margin-bottom: 2px;
+            border-radius: 40px;
+            opacity: .6;
+          }
+          .sp:hover{
+            background-color: rgb(158, 153, 139,.1);
+            opacity: 1;
+          }
+          #sp{
+            padding-left: 30px;
+          }
+          #second{
+            text-align: left;
+            float: left;
+            height:max-content;
+            width: 100%;
+            padding-top: 40px;
+            padding-left: 45px;
+          }
+          .second{
+            text-align: left;
+            width: 90%;
+            float: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 10px;
+            opacity: .7;
+          }
+          .second:hover{
+            opacity: 1;
+            text-decoration: underline;
+          }
+          
+          .container4{
+            float: left;
+            width: 100%;
+            height:max-content;
+            background-color:rgba(167, 167, 167, 0.24);
+            margin: 5px;
+            border-radius: 10px;
+            padding: 10px;
+          } 
+          .tablecontent{
+            background-color: transparent;
+            width: 30%;
+            height: 70px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+          }
+          .tablecontent:hover{
+            background-color: rgb(158, 153, 139,.1);
+          }     
+      </style>
+</head>
+<body>
+        <script src="index.js"> </script>
+      <div id="navbar">
+              <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 36px;margin-left: 130px;margin-top: 30px;
+              float: left;color: white;"><b> Spark </b></span>
+              <input type="text" id="searchbar" placeholder="Search" />
+      </div>
+     <div id="set">
+       <div id="sidebar">
+         <div id="sp">
+           <a class="sp">For you</a> 
+           <a class="sp">Browse</a>
+           <a class="sp">Charts</a>
+         </div> 
+        <div id="second">
+            <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 10px; color: gray;"><b>My library</b></span> <br/>
+              <a class="second">Favorite songs</a>
+              <a class="second">Artist</a>
+              <a class="second">Album</a>
+              <a class="second">History</a>
+        </div> 
+             <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 10px; color: gray;"><b>My Playlist</b></span> <br/>
+       </div>
+     <div id="mainContainer">  
+       <h1 class="demo" id="demo" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(255, 255, 255); font-size: 46px;"></h1>
+       <div class="containertwo">
+           <div style="width: 200px;height: 200px;float: left;">
+             <img style="background-color: violet;width: 100px;height: 100px;float: left;border-radius: 10px 0 0 0;"/>
+             <img style="background-color: violet;width: 100px;height: 100px;float: left;"/>
+             <img style="background-color: violet;width: 100px;height: 100px;float: left;border-radius: 0 0 0px 10px;"/>
+             <img style="background-color: violet;width: 100px;height: 100px;float: left;"/>
+           </div>
+           <div style="padding: 22px;float: left;font-size: 20px;color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+              <span><b>Your Daily Mix</b></span>
+           </div>
+       </div>
+      <div class="containera">
+           <p style="color: white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Hello Spark</p>
+      </div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container3">
+        <span style="float: left;width:100%;font-size: 24px;color: white;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-left: 20px;"><b>Popular Hits</b></span>
+        <a class="navigetor" style="margin-left: 0px;"onclick="plusSlides(-1,0)">&#10094</a>
+        <div class="slides1" style="display: block;">
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+        </div> 
+        <div class="slides1">
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+         </div> 
+         <a class="navigetor" style="margin-right: 0px;" onclick="plusSlides(+1,0)">&#10095</a>
+      </div>
+          
+      <div class="container3">
+        <span style="float: left;width:100%;font-size: 24px;color: white;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-left: 20px;"><b>Suggested Radio</b></span>
+        <a class="navigetor" style="margin-left: 0px;"onclick="plusSlides(-1,1)">&#10094</a>
+        <div class="slides2" style="display: block;">
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+         <div class="subcontainer"></div>
+        </div> 
+        <div class="slides2">
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+          <div class="subcontainer2"></div>
+         </div> 
+         <a class="navigetor" style="margin-right: 0px;" onclick="plusSlides(+1,1)">&#10095</a>
+      </div>
+           <div class="container4">
+            <span style="float: left;width:100%;font-size: 24px;color: white;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-left: 20px;"><b>Songs You May Like</b></span>
+             <table style="width: 100%;margin-top: 40px;">
+                  <tr>
+                     <td class="tablecontent">
+                        <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                        <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                             <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                             <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                        </div>
+                     </td>
+                     <td class="tablecontent">
+                      <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                      <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                           <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                           <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                      </div>
+                     </td>
+                     <td class="tablecontent">
+                      <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                      <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                           <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                           <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                      </div>
+                     </td>
+                  </tr>
+                  <tr>
+                    <td class="tablecontent">
+                      <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                        <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                             <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                             <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                        </div>
+                    </td>
+                    <td class="tablecontent">
+                      <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                        <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                             <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                             <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                        </div>
+                    </td>
+                    <td class="tablecontent">
+                      <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                      <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                           <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                           <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                      </div>
+                    </td>
+                 </tr>
+                 <tr>
+                  <td class="tablecontent">
+                    <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                    <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                         <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                         <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                    </div>
+                  </td>
+                  <td class="tablecontent">
+                    <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                    <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                         <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                         <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                    </div>
+                  </td>
+                  <td class="tablecontent">
+                    <div><img style="float:left; height: 70px; width: 70px;background-color: violet;border-radius: 10px;"/></div>
+                    <div style="float:left;width: 75%;height: 55px;margin-left: 5px;border-radius: 10px;padding-top: 15px;">
+                         <span style="font-family: sans-serif;color: white;"><b>Hello Spark</b></span><br/>
+                         <span style="font-size: 12px;font-family: sans-serif;color: rgb(109, 109, 109);"><b>created by Spark</b></span>
+                    </div>
+                  </td>
+               </tr>
+             </table>
+           </div>
+     </div> 
+  </div> 
+  <script>
+    var d = new Date();
+var time = d.getHours();
+ if(time > 6 && time < 12){
+  document.getElementById("demo").innerHTML = "Good Morning";
+ }
+ if (time > 12 && time < 17) {
+  document.getElementById("demo").innerHTML = "Good Afternoon";
+ }
+ if (time > 17 || time < 6) {
+    document.getElementById("demo").innerHTML = "Good Evening";
+ }
+  </script>  
+</body>
+</html>
